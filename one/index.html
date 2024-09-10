@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Search with Debouncing and Promises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f7f7f7;
+        }
+        #search-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #search {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #results {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        #results li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #loader {
+            display: none;
+            text-align: center;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <h1>Real-time Search with Debouncing and Promises</h1>
+        <input type="text" id="search" placeholder="Search..." />
+        <div id="loader">Loading...</div>
+        <ul id="results"></ul>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
